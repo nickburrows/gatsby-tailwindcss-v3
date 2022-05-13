@@ -1,0 +1,205 @@
+.container {
+  @apply flex-1 m-auto w-full max-w-[42rem] py-0 px-4;
+}
+/* 1/1 base rules are converted successfully. */
+/* Gather results from the console with `copy(window.cssToTailwindResults)` */
+
+/* ℹ️ Base selector: .container */
+/* ✨ TailwindCSS: "flex m-auto max-w-2xl py-0 px-4 w-full" */
+
+
+.box {
+  @apply h-32 min-w-full min-h-full text-gray-100 bg-indigo-700 rounded;
+}
+.row {
+  @apply box-border flex flex-row flex-wrap items-start flex-grow;
+}
+
+@media only screen and (min-width: 768px) {
+  .row {
+    margin-left: -16px;
+    margin-right: -16px;
+    max-width: calc(100% + 32px);
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .row {
+    margin-left: -12px;
+    margin-right: -12px;
+    max-width: calc(100% + 24px);
+  }
+}
+
+@media only screen and (min-width: 0px) {
+  .row {
+    margin-left: -8px;
+    margin-right: -8px;
+    max-width: calc(100% + 16px);
+  }
+}
+
+.featured {
+  margin-top: 25%;
+  margin-left: 20%;
+  padding-bottom: 25%;
+  width: 80%;
+  border-bottom: 1px solid #eee;
+}
+
+.info {
+  box-sizing: border-box;
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .info {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .article {
+    padding: 2em 0;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .info {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+@media only screen and (min-width: 0px) {
+  .info {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.author {
+  color: #999;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-right: 2em;
+}
+
+.title {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.date {
+  color: #999;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-right: 2em;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  font-size: 0.6em;
+}
+
+.date:after {
+  content: "";
+  width: 1em;
+  display: inline-block;
+  border-top: 1px solid #ddd;
+  margin-left: 2em;
+  position: relative;
+  top: -2px;
+}
+
+.category {
+  color: #999;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-right: 2em;
+  text-align: right;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  font-size: 0.6em;
+}
+
+@media only screen and (min-width: 0px) {
+  .cell-xs {
+    display: block;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .cell-xs {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+@media only screen and (min-width: 0px) {
+  .cell-xs {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.cell-xs {
+  box-sizing: border-box;
+  display: block;
+}
+
+.header-section-title {
+  @apply mt-4 mb-12 text-3xl tracking-tight;
+}
+.header-section-list {
+  @apply flex flex-wrap;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.pagination-item {
+  min-width: 50px;
+  margin: -1px 0.5em 0;
+  padding: 1em 0;
+  text-align: center;
+  border-top: 1px solid transparent;
+}
+.pagination-item.current {
+  border-top: 1px solid #000;
+}
+.blog-content {
+  @apply my-[6em] mx-0;
+}
+.blog-content > p > a {
+  @apply text-inherit;
+}
+.navigation-post {
+  @apply flex mb-[5em] pt-[3em] border-t border-t-zinc-200;
+}
+.navigation-post-title {
+  @apply m-auto;
+}
+.article {
+  padding: 4em 0;
+  border-bottom: 1px solid #eee;
+}
+.image-content {
+  margin-left: -5em;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.image-img {
+  display: block;
+  margin-bottom: 0;
+}
+.footer {
+  @apply text-center py-[1em] px-0;
+}
